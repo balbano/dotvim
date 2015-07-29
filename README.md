@@ -5,13 +5,14 @@ To make the appropriate links on Windows, install the Powershell Community Exter
 Installation instructions for windows adapted from the vimcast linked above:
 
 ```
-$ git clone http://github.com/username/dotvim.git ~/.vim
+$ cd ~
+$ git clone http://github.com/balbano/dotvim.git .vim
 
 $ New-Junction ~\vimfiles ~\.vim
 $ New-Hardlink ~\.vimrc ~\.vim\.vimrc
 $ New-Hardlink ~\.gvimrc ~\.vim\.gvimrc
 
-$ cd ~/.vim
+$ cd .vim
 $ git submodule init
 $ git submodule update
 ```
